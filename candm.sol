@@ -9,7 +9,7 @@ contract RichardToken is ERC20, Ownable {
         _mint(msg.sender, 1000000);
     }
 
-    function burn(uint256 amount) public onlyOwner {
+    function burn(uint256 amount) public {
         _burn(msg.sender, amount);
     }
 
